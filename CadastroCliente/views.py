@@ -9,3 +9,6 @@ def index(request):
         'frutas' : lista_frutas
         }
     return render(request, 'index.html', context)
+
+def listar_clientes(request):
+    return render(request, 'lista_cliente.html')
