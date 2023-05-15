@@ -8,10 +8,10 @@
 </head>
 <body>
 
-    <h1>{{ cliente.nome }}</h1>
+<div align="center">
+    <h2>{{ cliente.nome }}</h2>
 
-    <table border="1">
-
+    <table border="1" width="700">
         <tr>
             <td>Nome:</td>
             <td>{{ cliente.nome }}</td>
@@ -22,10 +22,34 @@
         </tr>
         <tr>
             <td>Endereço:</td>
-            <td>Av. Marechal, 1500 - São Miguel - São Paulo</td>
+            <td>{{cliente.endereco}} - {{cliente.nro}} || {{cliente.bairro}} - {{cliente.cidade}} || CEP: {{cliente.cep}}</td>
+        </tr>
+        <tr>
+            <td>Número de Matrícula:</td>
+            <td>{{cliente.matricula}}</td>
+        </tr>
+        <tr>
+            <td>Renda Mensal:</td>
+            <td>{{cliente.renda_mensal}}</td>
+        </tr>
+        <tr>
+            <td>Estado Civil:</td>
+            <td>{{cliente.estado_civil}}</td>
+        </tr>
+        <tr>
+            <td>Profissão:</td>
+            <td>{{cliente.profissao}}</td>
+        </tr>
+        <tr>
+            <td>Interesses:</td>
+            <td>{{cliente.interesses}}</td>
+        </tr>
+        <tr>
+            <td>Cadastro ativo:</td>
+            <td>{{cliente.ativo}}</td>
         </tr>
 
     </table>
-
+</div>
 </body>
 </html>
