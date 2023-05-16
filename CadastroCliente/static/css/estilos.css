@@ -1,0 +1,17 @@
+/*seletor universal*/
+* {
+    color: #0059ff;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/*seletor por tag*/
+h1{
+    color: green;
+    font-weight: bold;
+}
+
+/*Seletor de classe*/
+.TextoLaranja{
+    color: orange;
+}
